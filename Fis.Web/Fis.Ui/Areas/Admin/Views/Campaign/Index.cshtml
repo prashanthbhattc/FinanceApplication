@@ -1,0 +1,101 @@
+﻿
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Campaign</li>
+        </ol>
+    </nav>
+    <div class="btn-toolbar mb-2 mb-md-0 shadow d-print-none">
+        <div class="btn-group mr-2">
+            <button type="button" class="btn btn-sm btn-outline-primary search bw-100"> <i data-feather="edit"></i></button>
+            <button type="button" class="btn btn-sm btn-outline-primary search bw-100 " data-toggle="modal" data-target="#popupModal"> <i data-feather="search"></i></button>
+            <button type="button" class="btn btn-sm btn-outline-primary create bw-100" data-toggle="modal" data-target="#popupModal"> <i data-feather="plus"></i></button>
+            <button type="button" class="btn btn-sm btn-outline-primary search bw-100"> <i data-feather="save"></i></button>
+            <button type="button" class="btn btn-sm btn-outline-primary search bw-100"> <i data-feather="filter"></i></button>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid shadow pt-4">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped table-bordered table-sm">
+                <thead>
+                    <tr>
+
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Handle</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Handle</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Handle</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Handle</th>
+                        <th>First</th>
+                        <th>Last</th>
+                        <th>Action</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < 200; i++)
+                    {
+                        <tr>
+
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>mdo</td>
+
+                            <td>Mark</td>
+                            <td>gdfghfdhfdhfdhdfhdhdfghdfhh</td>
+                            <td>
+                                <div class="">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary search "> <i data-feather="edit"></i></button>
+                                        <button type="button" class="btn btn-sm btn-outline-primary search " data-toggle="modal" data-target="#popupModal"> <i data-feather="search"></i></button>
+                                        <button type="button" class="btn btn-sm btn-outline-primary create " data-toggle="modal" data-target="#popupModal"> <i data-feather="plus"></i></button>
+                                        <button type="button" class="btn btn-sm btn-outline-primary search "> <i data-feather="save"></i></button>
+                                        <button type="button" class="btn btn-sm btn-outline-primary search "> <i data-feather="filter"></i></button>
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                    }
+
+
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+@section Scripts
+{
+   
+    <script src="~/js/Campaign/Campaign.js"></script>
+    <script>
+        $(function () {
+            const campaign = new CampaignManager();
+        });
+    </script>
+}
